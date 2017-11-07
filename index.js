@@ -11,4 +11,4 @@ function handle(req , res)
 }
 
 var s = http.createServer(handle);
-s.listen(3000 , function(){ console.log("Started the server"); });
+s.listen(process.env.PORT||3000 , function(){ console.log("Started the server"); });
